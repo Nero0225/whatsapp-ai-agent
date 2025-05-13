@@ -12,7 +12,7 @@ import base64
 logger = logging.getLogger(__name__)
 account_sid = settings.TWILIO_ACCOUNT_SID
 auth_token = settings.TWILIO_AUTH_TOKEN
-
+  
 class AIService:
     def __init__(self):
         self.client = AsyncOpenAI(api_key=settings.OPENAI_API_KEY)
